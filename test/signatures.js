@@ -1,8 +1,8 @@
 'use strict';
 
 var should = require('chai').should();
-var bitcore = require('bitcore-lib');
-var Networks = bitcore.Networks;
+var fcore = require('fcash-lib');
+var Networks = fcore.Networks;
 
 describe('signature checks', function() {
 
@@ -33,9 +33,9 @@ describe('signature checks', function() {
 
 });
 
-var providerKey = new bitcore.PrivateKey('58e78db594be551a8f4c7070fd8695363992bd1eb37d01cd4a4da608f3dc5c2d', bitcore.Networks.testnet);
-var fundingKey = new bitcore.PrivateKey('79b0630419ad72397d211db4988c98ffcb5955b14f6ec5c5651eec5c98d7e557', bitcore.Networks.testnet);
-var commitmentKey = new bitcore.PrivateKey('17bc93ac93f4a26599d3af49e59206e8276259febba503434eacb871f9bbad75', bitcore.Networks.testnet);
+var providerKey = new fcore.PrivateKey('58e78db594be551a8f4c7070fd8695363992bd1eb37d01cd4a4da608f3dc5c2d', fcore.Networks.testnet);
+var fundingKey = new fcore.PrivateKey('79b0630419ad72397d211db4988c98ffcb5955b14f6ec5c5651eec5c98d7e557', fcore.Networks.testnet);
+var commitmentKey = new fcore.PrivateKey('17bc93ac93f4a26599d3af49e59206e8276259febba503434eacb871f9bbad75', fcore.Networks.testnet);
 var providerAddress = providerKey.toAddress(Networks.testnet);
 
 var getConsumer = function() {

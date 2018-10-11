@@ -1,13 +1,13 @@
 {
-  "name": "bitcore-channel",
+  "name": "fcash-channel",
   "version": "1.0.1",
-  "description": "Add payment channels support to bitcore",
+  "description": "Add payment channels support to fcore",
   "scripts": {
     "lint": "gulp lint",
     "test": "gulp test",
     "coverage": "gulp coverage"
   },
-  "author": "BitPay <dev@bitpay.com>",
+  "author": "Fcash <dev@fcash.cash>",
   "contributors": [
     {
       "name": "Esteban Ordano",
@@ -20,7 +20,7 @@
   ],
   "keywords": [
     "bitcoin",
-    "bitcore",
+    "fcore",
     "btc",
     "satoshi",
     "payment channels",
@@ -28,13 +28,13 @@
     "smart contract"
   ],
   "license": "MIT",
-  "repository": "https://github.com/bitpay/bitcore-channel",
+  "repository": "https://github.com/fcash-project/fcash-channel",
   "dependencies": {
-    "bitcore-lib": "^0.13.7",
+    "fcash-lib": "^0.13.7",
     "inherits": "=2.0.1"
   },
   "devDependencies": {
-    "bitcore-build": "git://github.com/bitpay/bitcore-build.git",
+    "fcash-build": "git://github.com/fcash-project/fcash-build.git",
     "brfs": "^1.2.0",
     "chai": "^2.3.0",
     "gulp": "^3.8.10",

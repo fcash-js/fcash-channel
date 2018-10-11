@@ -1,5 +1,5 @@
 # Payment Channels
-Bitcore includes classes necessary to handle payment channel smart contracts. The approach taken is networking-agnostic, so this library can be used at any layer.
+Fcash includes classes necessary to handle payment channel smart contracts. The approach taken is networking-agnostic, so this library can be used at any layer.
 
 ## Installation
 Payment channels are implemented as a separate module and you must add it to your dependencies:
@@ -7,13 +7,13 @@ Payment channels are implemented as a separate module and you must add it to you
 For node projects:
 
 ```
-npm install bitcore-channel --save
+npm install fcash-channel --save
 ```
 
 For client-side projects:
 
 ```
-bower install bitcore-channel --save
+bower install fcash-channel --save
 ```
 
 ## Getting Started
@@ -24,7 +24,7 @@ Let's start with an overview of how to use the Consumer side. Let's assume that 
 We also have a final address that we'll use as a "change" address (sending here any funds that we didn't transact with the Provider). We'll call this the "refund" address, as it will also be the address where the refund will get to in case the contract is cancelled.
 
 ```javascript
-var Consumer = require('bitcore-channel').Consumer;
+var Consumer = require('fcash-channel').Consumer;
 var providerPublicKey = '027f10e67bea70f847b3ab92c18776c6a97a78f84def158afc31fd98513d42912e';
 var refundAddress = 'mzCXqcsLBerwyoRZzBFQELHaJ1ZtBSxxe6';
 var providerAddress = 'mrCHmWgn54hJNty2srFF4XLmkey5GnCv5m';
@@ -45,7 +45,7 @@ console.info('Send bitcoins to ' + consumer.fundingAddress.toString() ' to fund 
 consumer.processFunding([{...}, {...}, {...}]);
 ```
 
-The objects that the consumer can understand are those returned by the Insight API: [https://github.com/bitpay/insight-api#unspent-outputs](https://github.com/bitpay/insight-api#unspent-outputs)
+The objects that the consumer can understand are those returned by the Insight API: [https://github.com/fcash-project/insight-api#unspent-outputs](https://github.com/fcash-project/insight-api#unspent-outputs)
 
 Once funded, we'll need the server to sign the refund transaction that allows us to reclaim our funds in case the server vanishes.
 
@@ -56,7 +56,7 @@ var messageToProvider = consumer.setupRefund();
 Now let's take a look at the Provider side. We'll need to specify a final address where to send our funds.
 
 ```javascript
-var Provider = require('bitcore-channel').Provider;
+var Provider = require('fcash-channel').Provider;
 var paymentAddress = 'mig4mc6q7PTQ2YZ9ax5YtR4gjARfoqJSZd';
 
 var provider = new Provider({

@@ -1,5 +1,5 @@
 'use strict';
 
-var gulp_bitcore = require('bitcore-build');
+var gulp_fcore = require('fcash-build');
 
-gulp_bitcore('channel');
+gulp_fcore('channel');

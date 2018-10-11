@@ -1,18 +1,18 @@
 {
-  "name": "bitcore-channel",
-  "main": "./bitcore-channel.min.js",
+  "name": "fcash-channel",
+  "main": "./fcash-channel.min.js",
   "version": "1.0.1",
-  "homepage": "https://github.com/bitpay/bitcore-channel",
+  "homepage": "https://github.com/fcash-project/fcash-channel",
   "authors": [
-    "BitPay"
+    "Fcash"
   ],
-  "description": "Payment Channels implemented for Bitcore.",
+  "description": "Payment Channels implemented for Fcash.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
     "bitcoin",
-    "bitcore",
+    "fcore",
     "btc",
     "satoshi",
     "payment channels",
