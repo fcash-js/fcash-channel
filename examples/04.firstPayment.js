@@ -2,8 +2,8 @@
 
 var assert = require('assert');
 var fs = require('fs');
-var fcore = require('fcash-lib');
-var PrivateKey = fcore.PrivateKey;
+var fcashBase = require('fcash-lib');
+var PrivateKey = fcashBase.PrivateKey;
 var Consumer = require('../lib/Consumer');
 var Commitment = require('../lib/transactions/Commitment');
 

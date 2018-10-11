@@ -1,7 +1,7 @@
 var channel = require('../');
-var fcore = require('fcash-lib');
+var fcashBase = require('fcash-lib');
 
 
-var providerKey = new fcore.PrivateKey(fcore.Networks.testnet);
+var providerKey = new fcashBase.PrivateKey(fcashBase.Networks.testnet);
 
 console.log('provider key: ' + providerKey.toString());

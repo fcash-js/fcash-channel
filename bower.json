@@ -2,7 +2,7 @@
   "name": "fcash-channel",
   "main": "./fcash-channel.min.js",
   "version": "1.0.1",
-  "homepage": "https://github.com/fcash-project/fcash-channel",
+  "homepage": "https://github.com/fcash-js/fcash-channel",
   "authors": [
     "Fcash"
   ],
@@ -12,7 +12,7 @@
   ],
   "keywords": [
     "bitcoin",
-    "fcore",
+    "fcash-base",
     "btc",
     "satoshi",
     "payment channels",

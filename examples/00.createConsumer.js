@@ -1,10 +1,10 @@
 var channel = require('../');
-var fcore = require('fcash-lib');
+var fcashBase = require('fcash-lib');
 
 
-var refundKey = new fcore.PrivateKey(fcore.Networks.testnet);
-var fundingKey = new fcore.PrivateKey(fcore.Networks.testnet);
-var commitmentKey = new fcore.PrivateKey(fcore.Networks.testnet);
+var refundKey = new fcashBase.PrivateKey(fcashBase.Networks.testnet);
+var fundingKey = new fcashBase.PrivateKey(fcashBase.Networks.testnet);
+var commitmentKey = new fcashBase.PrivateKey(fcashBase.Networks.testnet);
 
 console.log('funding key: ' + refundKey.toString());
 console.log('refund key: ' + fundingKey.toString());

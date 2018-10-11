@@ -1,7 +1,7 @@
 'use strict';
-var fcore = require('fcash-lib');
+var fcashBase = require('fcash-lib');
 var fs = require('fs');
-var PrivateKey = fcore.PrivateKey;
+var PrivateKey = fcashBase.PrivateKey;
 var Consumer = require('../lib/Consumer');
 
 var fundingKey = new PrivateKey('cb5dc68fbcaf37f29139b50fa4664b395c03e49deb966e5d49a629af005d0654');
@@ -19,7 +19,7 @@ var consumer = new Consumer({
   providerAddress: providerKey.toAddress()
 });
 
-var insight = new fcore.transport.explorers.Insight();
+var insight = new fcashBase.transport.explorers.Insight();
 
 insight.getUnspentUtxos(consumer.fundingAddress, function(err, utxos) {
   consumer.processFunding(utxos);

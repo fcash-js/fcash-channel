@@ -1,5 +1,5 @@
 'use strict';
 
-var gulp_fcore = require('fcash-build');
+var gulp_fcash_base = require('fcash-build');
 
-gulp_fcore('channel');
+gulp_fcash_base('channel');

@@ -45,7 +45,7 @@ console.info('Send bitcoins to ' + consumer.fundingAddress.toString() ' to fund 
 consumer.processFunding([{...}, {...}, {...}]);
 ```
 
-The objects that the consumer can understand are those returned by the Insight API: [https://github.com/fcash-project/insight-api#unspent-outputs](https://github.com/fcash-project/insight-api#unspent-outputs)
+The objects that the consumer can understand are those returned by the Insight API: [https://github.com/fcash-js/insight-api#unspent-outputs](https://github.com/fcash-js/insight-api#unspent-outputs)
 
 Once funded, we'll need the server to sign the refund transaction that allows us to reclaim our funds in case the server vanishes.
 
