@@ -1,6 +1,6 @@
 {
   "name": "fcash-channel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add payment channels support to fcash-base",
   "scripts": {
     "lint": "gulp lint",
